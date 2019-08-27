@@ -11,7 +11,7 @@ def factorial(value):
     else:
         return value * factorial(value - 1)
 
-def is_prime(num)
+def is_prime(num):
 
 	if num <= 1: 
         return False
