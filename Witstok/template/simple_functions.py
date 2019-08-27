@@ -14,6 +14,9 @@ def factorial(value):
 def is_prime(number):
     if not isinstance(number, int):
         return False
+
+    if number <= 2:
+        return False
     
     divider = 2
     prime = True
