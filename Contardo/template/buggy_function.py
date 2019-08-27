@@ -9,6 +9,7 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
     ----------
     angle_in_degrees : float
         A scalar angle, expressed in degrees
+    decimal : 
 
     Returns
     -------
