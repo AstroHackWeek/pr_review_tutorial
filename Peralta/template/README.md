@@ -30,3 +30,15 @@ There is a function for guessing whether a given integer is a prime number:
     >>> is_prime(9)
     False
 
+Buggy function
+--------------
+
+Angle to sexigesimal
+~~~~~~~~~~~~~~~~~~~~
+
+There is a function for guessing whether a given integer is a prime number:
+
+    >>> from buggy_function import angle_to_sexigesimal
+    >>> angle_to_sexigesimal(0.5, decimals=4)
+    '0:2:0.0000'
+
