@@ -1,4 +1,4 @@
-from math import sqrt, ceil
+from math import sqrt, ceil, floor
 import numbers
 
 
@@ -18,11 +18,13 @@ def factorial(value):
 
 def is_prime(n):
     ''' This function checks whether the arguments is a prime number.
-    It expects an integer, so an input like 7.0 is going to return
-    False.
+    It expects an integer, but it can be represented as a float, e.g.,
+    7.0 is OK, but 7.1 is not.
     '''
-    if not(isinstance(n, numbers.Integral)):
-        return False
+    if floor(n) != n:
+        raise OSError('input to is_prime() should be an integer!')
+##    if not(isinstance(n, numbers.Integral)):
+##        return False
     if (n <= 1):
         return False
     for i in range(2, ceil(sqrt(n))+1):
