@@ -1,3 +1,5 @@
+import math
+
 def fibonacci(max):
     values = [0, 1]
     while values[-2] + values[-1] < max:
@@ -10,3 +12,10 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+
+def is_prime(value):
+    for i in range(2, int(math.floor(value/2))):
+        if value%i == 0:
+            return False
+    return True
