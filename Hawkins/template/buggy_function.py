@@ -23,13 +23,13 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
         print('Warning : Decimals should be an integer! Converting it now (if possible)')
         decimals = int(decimals)
 
-    hours_num = angle_in_degrees/15
+    hours_num = angle_in_degrees/15.0
     hours = math.floor(hours_num)
 
-    min_num = (hours_num - hours)*60
+    min_num = (hours_num - hours)*60.0
     minutes = math.floor(min_num)
 
-    seconds = (min_num - minutes)*60
+    seconds = (min_num - minutes)*60.0
 
     format_string = '{}:{}:{:.' + str(decimals) + 'f}'
     return format_string.format(hours, minutes, seconds)
