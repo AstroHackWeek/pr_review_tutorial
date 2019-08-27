@@ -14,16 +14,16 @@ def factorial(value):
 
 def is_prime(a) : 
 
-	if a < 2 : 
-		return True
-
-	else : 
+	if a >= 2 : 
 		for i in range(2,a) : 
-
 			if not (a%i) : 
 				return False
-		else : 
-			return True		
+	elif a ==1 : 
+		return True			
+	else : 
+		return False		
+
+	return True	
 
 
 
