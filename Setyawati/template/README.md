@@ -7,7 +7,12 @@ functions that do stuf and thats:
 
 and this other part does something:
 
+check fibonacci numbers
     >>> fibonnaccci(100)
     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+check prime numbers, return True if the input is prime and False otherwise.
+    >>> is_prime(10)
+    False
 
 If you can't use it, its kind of your problem, not mine!
