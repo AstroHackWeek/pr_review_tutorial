@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 def fibonacci(max):
     values = [0, 1]
     while values[-2] + values[-1] < max:
@@ -10,3 +13,15 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+
+def is_prime(n):
+    if not(isinstance(n, int)): ## XXX assumes Python 3
+        return False
+    if (n <= 1):
+        return False
+    ## for i in range(2, ceil(sqrt(n))):
+    for i in range(2, n):
+        if (n % i == 0):
+            return False
+    return True
