@@ -1,4 +1,5 @@
-from math import sqrt
+from math import sqrt, ceil
+import numbers
 
 
 def fibonacci(max):
@@ -16,12 +17,15 @@ def factorial(value):
 
 
 def is_prime(n):
-    if not(isinstance(n, int)): ## XXX assumes Python 3
+    ''' This function checks whether the arguments is a prime number.
+    It expects an integer, so an input like 7.0 is going to return
+    False.
+    '''
+    if not(isinstance(n, numbers.Integral)):
         return False
     if (n <= 1):
         return False
-    ## for i in range(2, ceil(sqrt(n))):
-    for i in range(2, n):
+    for i in range(2, ceil(sqrt(n))+1):
         if (n % i == 0):
             return False
     return True
