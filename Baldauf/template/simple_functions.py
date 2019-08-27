@@ -16,12 +16,9 @@ def is_prime(value):
     isprime=True
     if value>1:
         for i in range(2,value):
-            #print i
             if (value%i)==0:
                 isprime=False
                 break
-    else:
-        isprime=True
 
     return isprime
 
