@@ -13,4 +13,4 @@ in the Fibonacci series up until said number. Here is an example of it use:
     >>> fibonacci(100)
     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-If you have any problem, you can contact me!
+If you have any problem, you can contact me or raise an issue on github!
