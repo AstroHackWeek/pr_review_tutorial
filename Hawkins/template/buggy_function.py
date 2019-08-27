@@ -23,6 +23,9 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
         print('Warning : Decimals should be an integer! Converting it now (if possible)')
         decimals = int(decimals)
 
+    if angle_in_degrees > 360 or angle_in_degrees < 0:
+        raise ValueError('ERROR: You must input an angle that is between 0 and 360 degrees! ')
+
     hours_num = angle_in_degrees/15.0
     hours = math.floor(hours_num)
 
