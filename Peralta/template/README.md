@@ -13,12 +13,20 @@ There is a function for computing the factorial of an integer number:
     9
 
 Fibonnacci
-~~~~~~~~~
-and this other part does something.  I forget why that I did it:
+~~~~~~~~~~
 
 There is a function for computing the Fibonnacci numbers lower than a given integer:
 
     >>> from simple_functions import fibonnacci
     >>> fibonnacci(100)
     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+Is prime?
+~~~~~~~~~
+
+There is a function for guessing whether a given integer is a prime number:
+
+    >>> from simple_functions import is_prime
+    >>> is_prime(9)
+    False
 
