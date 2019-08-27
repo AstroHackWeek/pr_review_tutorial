@@ -12,8 +12,7 @@ def factorial(value):
         return value * factorial(value - 1)
 
 def is_prime(value):
-    if value % 2.0 == 0 or value % 3.0 == 0 or value % 5.0 == 0:
+    if value % 2.0 == 0 or value % 3.0 == 0 or value % 5.0 == 0 or valye % 7.0 == 0:
         print("False")
     else:
         print("True")
-        
