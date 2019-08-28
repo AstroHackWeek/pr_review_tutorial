@@ -10,3 +10,19 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+
+def is_prime(value):
+    isprime=True
+    if value>1:
+        for i in range(2,value):
+            if (value%i)==0:
+                isprime=False
+                break
+
+    return isprime
+
+
+
+
+
