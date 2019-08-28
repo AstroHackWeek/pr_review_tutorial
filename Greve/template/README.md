@@ -1,13 +1,16 @@
-Ok so I guess you are reading this cuz you wanna use my code. There are some
-functions that do stuf and thats:
+This repository contains two python scripts containing a few handy functions.
 
-    >>> from simple_functions import factorial
-    >>> factorial(10)
-    9
 
-and this other part does something.  I forget why that I did it:
+buggy_function.py
+   Contains the function angle_to_sexigesimal, which converts a given input
+   angle (in units of degrees) to a string with the format hh:mm:ss.s.
+   WARNING: currently a bug in this function.
 
-    >>> fibonnaccci(100)
-    [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+simple_function.py
+    Contains the function fibonacci, which for a given input number returns a list 
+    of all the fibonnaci numbers up to that input number.
+    Contains the function factorial, which returns the factorial for a a given 
+    input value.
 
-If you can't use it, its kind of your problem, not mine!
+
+TRG EDIT
